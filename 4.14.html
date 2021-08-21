@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="utf-8">
+        <title>4.14</title>
+        <link rel="stylesheet" href="4.14.css">
+        <meta name="practise" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <form id = simple-calculator>
+        <ul>
+            <li>
+                <label for="Op1">Операнд 1</label>
+                <input type="text" id="Op1" value="" placeholder="Число" minlength="0" maxlength="16">
+            </li>
+            <li>
+                <label for="action">Дія</label>
+                <select id="action">
+                    <option value="plus">+</option>
+                    <option value="minus">-</option>
+                    <option value="product">*</option>
+                    <option value="friction">/</option>
+                    <option value="fragment">%</option>
+                    <option value="power">**</option>
+                </select>
+            </li>
+            <li>
+                <label for="Op2">Операнд 2</label>
+                <input type="text" id="Op2" value="" placeholder="Число" minlength="0" maxlength="16">
+            </li>
+            <li><button class="equals" type="button" id="calculate" >=</button></li>
+            <li>
+                <label for="result">Результат</label>
+                <input type="text" id="result" value="" disabled="" readonly="">
+            </li>
+        </ul>
+        </form>
+        <script src="4.14.js"></script>
+    </body>
+</html>

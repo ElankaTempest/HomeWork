@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="utf-8">
+        <title>4.14</title>
+        <meta name="practise" content="width=device-width, initial-scale=1">
+        <style>
+        body {
+        font: normal 1rem/1.5rem "Times New Roman",Verdana,sans-serif;
+        color: #000000;
+        margin: 0;
+        padding: 0;
+    }
+    #data-calculator {
+        display: block;
+        width: 54rem;
+        margin: calc(50vh - 3.6rem) auto 0 auto;
+    }
+
+        #data-calculator ul {
+            list-style: none;
+            //display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: center;
+            align-items: flex-end;
+            margin: 0;
+            padding: 0;
+        }
+
+            #data-calculator ul li {
+                flex: 1 0 auto;
+                padding: 0 0.5rem;
+            }
+/*
+                #simple-calculator ul li label,
+                #simple-calculator ul li input,
+                #simple-calculator ul li select {
+                    display: block;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                }
+
+                #simple-calculator ul li label {
+                    color: #8e8e8e;
+                }
+
+                #simple-calculator ul li input,
+                #simple-calculator ul li select {
+                    border: 0.05rem solid #a0a0a0;
+                    border-radius: 0.2rem;
+                    margin: 0;
+                    outline: none;
+                    padding: 0.25rem 0.5rem;
+                    width: 10rem;
+                }
+
+                #simple-calculator ul li select {
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    cursor: pointer;
+                    background: #fff;
+                }
+
+                #simple-calculator ul li input#calculate {
+                    background: #0085fc;
+                    color: #fff;
+                    width: 5rem;
+                    border: 0.05rem solid #0085fc;
+                    border-radius: 0.2rem;
+                }*/
+            </style>
+    </head>
+    <body>
+        <form id = data-calculator>
+        <ul>
+            <li>
+                <label for="startDate">Дата і час початку</label>
+                <input type="datetime-local" name="datetimelocal" id="datetimelocal">
+            </li>
+            <li>
+                <label for="endDate">Дата і час завершення</label>
+                <input type="datetime-local" name="datetimelocal" id="datetimelocal">
+            </li>
+            <li>
+                <button class="calculateDifference" type="button" id="calculate" >Розрахувати різницю</button>
+            </li>
+        </ul>
+        /*<table>
+            <tr>
+                <th>Різниця між датами</th>
+            </tr>
+            <tr>
+                <td>Комірка 1-1</td>
+                <td>Комірка 1-2</td>
+                <td>Комірка 1-3</td>
+            </tr>
+        </table>*/
+        </form>
+        <script src="4.16.js"></script>
+    </body>
+</html>
